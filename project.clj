@@ -33,7 +33,8 @@
   ;; nREPL by default starts in the :main namespace, we want to start in `user`
   ;; because that's where our development helper functions like (run) and
   ;; (browser-repl) live.
-  :repl-options {:init-ns user}
+  :repl-options {:init-ns user
+                 :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
   :cljsbuild {:builds
               {:app
@@ -89,7 +90,7 @@
              {:dependencies [[figwheel "0.5.2"]
                              [figwheel-sidecar "0.5.2"]
                              [com.cemerick/piggieback "0.2.1"]
-                             [org.clojure/tools.nrepl "0.2.12"]]
+                             [org.clojure/tools.nrepl "0.2.10"]]
 
               :plugins [[lein-figwheel "0.5.2"]
                         [lein-doo "0.1.6"]]

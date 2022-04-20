@@ -1,5 +1,6 @@
-# jv-clock
+# jv-clock (Clojure/ClojureScript) (Unfinished)
 
+An early experiment in Clojure and ClojureScript. Still runs with a visual UI, see https://github.com/jeffvandyke/ring-clock-animation For a vanilla JavaScript idea of what I was trying to build here. Though this project was unfinished, it was still a decent learning experience.
 
 ## Development
 
